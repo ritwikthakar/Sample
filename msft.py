@@ -29,8 +29,8 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-app.layout = html.Div(Microsoft=[
-    html.H4(Microsoft='Microsoft Balance Sheet'),
+app.layout = html.Div(children=[
+    html.H4(children='Microsoft Balance Sheet'),
     generate_table(Balance_Sheet)
 ])
 
